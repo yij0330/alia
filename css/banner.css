@@ -1,0 +1,65 @@
+/* 二级菜单+轮播图  */
+#menu{
+    width: 200px;
+    background: #CCCCFF;
+    position: relative;
+}
+#menu img{
+    width: 20px;
+    height: 20px;
+}
+#menu li{
+    line-height: 36px;
+    text-indent: 10px;
+}
+#menu li a:hover{
+    text-decoration: none;
+    color: #f60;
+}
+#menu li .title{
+    border: solid 1px transparent;
+}
+#menu li:hover .title{
+    background: #fff;
+    color: #ff6600;
+    position: relative;
+    z-index: 1002;
+    border: solid 1px #ff6600;
+    border-right: none;
+}
+#menu li dl{
+    font-size: 14px;
+    width: 474px;
+    position: absolute;
+    top: 0;
+    left: 199px;
+    border: solid 1px #ff6600;
+    padding: 5px 68px 25px 36px;
+    background: rgba(255, 255, 255, .9);
+    z-index: 1001;
+    display: none;
+}
+#menu li:hover dl{
+    display: block;
+}
+#menu li dl .break{
+    margin-bottom: 30px;
+    border: none;
+}
+#menu li dl .break a{
+    margin-right: 34px;
+    color: #1a1a1a;
+    border: none;
+}
+#menu li dl dt{
+    border-bottom: solid 1px #e6e6e6;
+    color: #ff6600;
+}
+#menu li dl dd a{
+    margin-right: 8px;
+    color: #262626;
+    font-size: 12px;
+}
+#banner{
+    width: 1000px;
+}

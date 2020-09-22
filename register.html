@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <!-- 重置样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 头部 -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- 登录页样式 -->
+    <link rel="stylesheet" href="./css/register.css">
+    <!-- 页脚 -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- 引入jq库 -->
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <!-- 表单验证 -->
+    <script src="./js/jquery.validate.min.js"></script>
+    <!-- 注册页面js -->
+    <script src="./js/register.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header">
+        <div class="top mw1200 cfff font14">
+            <div class="container clearfix">
+                <span class="ml260">legouchina.cn</span>
+                <div class="fr">
+                    欢迎光临乐购,
+                    请<a href="login.html">登录</a>|<a href="#">注册</a>
+                </div>
+            </div>
+        </div>
+        <div class="container relative">
+            <a href="home.html">
+                <img src="./imgs/login-logo.jpg" class="logo absolute w258 h105">
+            </a>
+            <div class="font30 cfff absolute logotxt left145">注册</div>
+            <span class="lh78 font30 c666 ml280">欢迎登录</span>
+            <span class="fr ca6 font20 login">已有账号，请 <a href="login.html" class="cff6600">登录</a> </span>
+        </div>
+    </div>
+    <!-- 注册 -->
+    <div id="register" class="container bdbccc">
+        <form action="#" method="post" class="myform c666 font16">
+            <p>
+                <label>用户名</label> 
+                <input type="text" name="username" class="username" placeholder="您的账户名和登录名">
+                <span class="login_icon del_icon"></span>
+            </p>
+            <p>
+                <label>设置密码</label> 
+                <input type="password" name="pwd" class="pwd" placeholder="建议设置两种字符密码">
+                <span class="login_icon del_icon"></span>
+            </p>
+            <p>
+                <label>确认密码</label>
+                <input type="password" name="surePwd" class="surePwd" placeholder="再次输入密码">
+                <span class="login_icon del_icon"></span>
+            </p>
+            <p>
+                <label>中国+86</label> 
+                <input type="tel" name="tel" class="tel" placeholder="建议使用常用手机号">
+                <span class="login_icon del_icon"></span>
+            </p>
+            <p>
+                <label>验证码</label> 
+                <input type="text" name="code" class="code" placeholder="请输入验证码">
+                <input type="button" class="codeBtn cfff hand" value="4AS4">
+            </p>
+            <p class="mb10">
+                <label>手机验证码</label> 
+                <input type="text" name="telCode" class="telCode" placeholder="请输入验证码">
+                <input type="button" class="telCodeBtn hand bgf2 c4d" value="获取验证码">
+            </p>
+            <div class="font14 bdnone mb30">
+               <label>
+                   <input type="checkbox" name="agree" class="agree">
+                   <span class="checkbox bdccc"></span>
+                   我已阅读并同意 <a href="#" class="cff6600">《乐购用户注册协议》</a> 
+               </label> 
+            </div>
+            <input type="submit" value="立即注册" class="btn cfff bgf60 font28 hand" disabled>
+        </form>
+    </div>
+    <!-- 页脚 -->
+    <div id="footer" class="container tcenter c333">
+        <p class="link">
+            <a href="#">公司简介</a>|
+            <a href="#">Investor Relations</a>|
+            <a href="#">网站联盟</a>|
+            <a href="#">乐购招商</a>|
+            <a href="#">机构销售</a>|
+            <a href="#">手机乐购</a>|
+            <a href="#">官方Blog</a>|
+            <a href="#">热词搜索</a>
+        </p>
+        <p class="copy">Copyright &copy; 乐购网 2004-2016, All Rights Reserved</p>
+    </div>
+</body>
+
+</html>

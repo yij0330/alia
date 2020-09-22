@@ -1,0 +1,115 @@
+#header select{
+    width: 171px;
+    height: 28px;
+}
+#header .address{
+    margin: 14px 14px 0 0;
+}
+
+#order label input+span{
+    width: 18px ;
+    height: 18px ;
+    border: solid 1px #ccc ;
+}
+#order label input+span:after{
+    width: 7px ;
+    height: 14px ;
+    top: -2px ;
+    left: 5px ;
+}
+#order label input{
+    display: none;
+}
+
+/* 订单 */
+#order{
+    user-select: none;
+}
+#order li{
+    float: left;
+}
+#order .title li,#order .main li{
+    width: 150px;
+    line-height: 60px;
+}
+#order .title li:first-child,#order .main li:first-child{
+    width: 100px;
+}
+#order .title li:nth-child(2),#order .main li:nth-child(2){
+    width: 500px;
+}
+
+#order .main{
+    border-top: solid 6px #ccc;
+}
+#order .main ul{
+    padding: 20px 0 26px 0;
+    margin-top: 20px;
+}
+#order .main li{
+    float: left;
+    line-height: 30px;
+}
+#order .main .pro div{
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+}
+#order .main .pro div img{
+    width: 150px;
+    height: 150px;
+}
+#order .main .many{
+    width: 128px;
+    line-height: 26px;
+}
+#order .main .add,#order .main .reduce{
+    width: 26px;
+}
+#order .main .result{
+    width: 74px;
+}
+#order .summary{
+    margin-right: -2px;
+}
+#order .summary li{
+    line-height: 60px;
+}
+#order .summary .removeChecked{
+    margin: 0 100px 0 30px;
+}
+#order .summary .removeAll{
+    margin-right: 329px;
+}
+#order .summary .checkMany{
+    display: inline-block;
+    width: 45px;
+}
+#order .summary li:nth-child(4){
+    margin: 0 48px;
+    font-weight: bold;
+}
+#order .summary .sum{
+    display: inline-block;
+    width: 70px;
+}
+#order .account{
+    width: 129px;
+    border-radius: 3px;
+    line-height: 62px;
+}
+#order .like .stitle span{
+    width: 124px;
+}
+#order .like .items{
+    margin: 0 27px 90px;
+}
+
+/* #order .tfooter{
+    position: fixed;
+    bottom: -46px;
+    left: 50%;
+    margin-left: -600px;
+    background: #eee;
+    z-index: 666;
+} */

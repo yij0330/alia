@@ -1,0 +1,173 @@
+#menu{
+    position: absolute;
+    display: none;
+    z-index: 1000;
+    top: 0;
+}
+.mtitle span{
+    display: inline-block;
+    transform: rotate(90deg);
+    margin-left : 12px;
+}
+
+/* 热卖畅销 */
+.hot li:not(:last-child){
+    border-bottom: solid 1px #b3b3b3;
+}
+.hot li{
+    height: 42px;
+    position: relative;
+    overflow: hidden;
+}
+.hot li.active{
+    height: 141px;
+}
+.hot li.active div{
+    padding: 20px 0;
+}
+.hot li span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff;
+    background: #f60;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hot li:nth-child(n+4) span{
+    background: #b3b3b3;
+}
+
+.hot li div img{
+    width: 100px;
+    height: 100px;
+}
+.hot li div p{
+    width: 96px;
+    padding-right: 2px;
+}
+
+/* 广告 */
+#ad img{
+    width: 1200px;
+    height: 120px;
+}
+
+/* 折扣区 */
+#discount .items{
+    width: 210px;
+    height: 253px;
+    margin-right: 37px;
+}
+#discount .items img{
+    width: 150px;
+    height: 150px;
+}
+#discount .items:nth-child(6),#discount .items:nth-child(11){
+    margin: 0 2px 0 0;
+}
+#discount .items:hover{
+    background: #f2f2f2;
+}
+
+/* 新书上架 */
+#newbook .left{
+    width: 900px;
+   
+}
+#newbook .contents{
+    padding: 15px 15px;
+}
+#newbook .contents .items{
+    width: 170px;
+    height: 220px;
+    margin-right: 4px;
+} 
+#newbook .contents .items img{
+    width: 150px;
+    height: 150px;
+}
+#newbook .contents .items:hover{
+    background: #f3f3f3;
+}
+#newbook .contents .items:nth-child(6),#newbook .contents .items:nth-child(11){
+    margin-right: 0;
+}
+#newbook .bookrank{
+    margin-top: 42px;
+} 
+
+/* 独家提供 */
+#exclusive{
+    height: 597px;
+}
+#exclusive .contents div img{
+    width: 150px !important;
+    height: 150px !important;
+}
+#exclusive .innerwrapper{
+    padding: 0 44px;
+}
+#exclusive .contents .items{
+    width: 170px;
+    height: 220px;
+    margin-left: 18px;
+}
+
+/* 猜你喜欢 */
+#like{
+    user-select: none;
+}
+#like .sliderbox{
+    width: 1112px;
+    height: 490px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px 44px;
+}
+#like .contents{
+    position: absolute;
+    top: 0;
+}
+#like .contents li{
+    display: block;
+}
+#like .contents .items{
+    width: 170px;
+    height: 220px;
+    margin-left: 18px;
+}
+#like .contents .items:nth-child(2),#like .contents .items:nth-child(8){
+    margin-left: 0;
+}
+
+/* 精选 */
+/* #carefully{
+    width: 1200px;
+    height: 138px;
+    position: relative;
+    overflow: hidden;
+}
+#carefully ul{
+    width: 2400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+#carefully .items{
+    width: 184px;
+    height: 113px;
+    padding: 10px 4px 2px 12px;
+}
+#carefully .items img{
+    width: 76px;
+    height: 93px;
+}
+#carefully .items p:last-child{
+    width: 100px;
+    background: red;
+    border-radius: 12px;
+}

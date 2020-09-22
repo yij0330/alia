@@ -1,0 +1,71 @@
+#orderCenter table{
+    padding: 10px 40px;
+    border-collapse: separate;
+    border-spacing: 25px;
+}
+#orderCenter table span{
+    margin: 0 15px;
+}
+#orderCenter table tr td:first-child{
+    border: 1px solid #ccc;
+}
+#orderCenter .newAdree td:first-child{
+    cursor: pointer;
+}
+#orderCenter table tr{
+    line-height: 40px;
+}
+#orderCenter table tr td{
+    padding: 0 15px;
+}
+#orderCenter .payStyle li{
+    float: left;
+    width: 125px;
+    height: 34px;
+    border: solid 1px #ccc;
+    margin-right: 17px;
+    cursor: pointer;
+    user-select: none;
+}
+#orderCenter .delive{
+    width: 426px;
+}
+#orderCenter .pro{
+    width: 690px;
+    height: 190px;
+}
+#orderCenter .pro img{
+    width: 100px;
+    height: 100px;
+}
+#orderCenter .pro ul{
+    margin-bottom: 20px;
+}
+#orderCenter .pro ul li{
+    float: left;
+    line-height: 100px;
+    
+}
+#orderCenter .pro ul li:not(:last-child){
+    margin-right: 90px;
+}
+#orderCenter .bill{
+    padding-top: 0;
+}
+#orderCenter .bill span{
+    margin: 0 20px;
+}
+#orderCenter .orderDetail{
+    line-height: 60px;
+}
+#orderCenter .orderDetail span{
+    color: #f60;
+    font-size: 22px;
+    margin: 0 20px;
+}
+#orderCenter .orderDetail>div:last-child{
+    margin-right: 30px;
+}
+#orderCenter .orderBtn{
+    width: 140px;
+}

@@ -1,0 +1,44 @@
+
+
+#pay>div:first-child{
+    margin-top: 100px;
+}
+
+#pay>div:nth-child(2){
+    padding: 0 80px 0 5px;
+}
+#pay>div:nth-child(4){
+    padding: 25px 20px 25px 60px;
+}
+
+#pay .bankId{
+    width: 125px;
+    height: 34px;
+}
+#pay .bank{
+    padding: 0 20px;
+}
+#pay .bank span:nth-child(2){
+    margin: 0 40px;
+}
+#pay .btn{
+    width: 120px;
+    height: 36px;
+    background-color: #999;
+}
+#pay .payBtn{
+    width: 228px;
+}
+#pay .otherPay{
+    background: #76aff5;
+}
+#pay .payStyle{
+    padding: 36px 350px 36px 70px;
+}
+#pay .payStyle li{
+    float: left;
+    padding: 0 12px;
+}
+#pay .payStyle li:not(:last-child){
+    border-right: solid 1px #ccc;
+}

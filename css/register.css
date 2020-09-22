@@ -1,0 +1,78 @@
+#header{
+    box-shadow: 5px 5px 5px #ccc;
+}
+#header .login{
+    margin: 40px 30px 0 0;
+}
+
+#register .myform{
+    width: 400px;
+    margin: 40px auto;
+}
+#register .myform p{
+    height: 42px;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    line-height: 42px;
+    text-indent: 10px;
+    position: relative;
+    padding-right: 3px;
+    user-select: none;
+}
+
+#register .myform p:nth-child(-n+4){
+    width: 374px;
+    padding-right: 24px;
+}
+#register .myform p label:first-child{
+    display: inline-block;
+    width: 145px;
+    float: left;
+}
+
+#register .myform input{
+    width: 225px;
+    height: 38px;
+    outline: none;
+    border: none;
+    margin-top: 2px;
+    float: left;
+}
+#register .myform p input::placeholder{
+    color: #ccc;
+    font-size: 14px;
+}
+#register .myform p .code,#register .myform p .telCode{
+    width: 130px;
+}
+#register .myform p .codeBtn,#register .myform p .telCodeBtn{
+    width: 112px;
+    height: 36px;
+    margin: 3px 0 0 8px;
+}
+#register .myform p .codeBtn{
+    background: #1a83e5;
+}
+#register .myform label input{
+    width: 12px;
+    height: 12px;
+    display: none;
+}
+#register .myform label input:checked~.checkbox{
+    background: #f60;
+}
+#register .myform .btn{
+    width: 400px;
+    height: 44px;
+    background: #ccc;
+    float: none;
+    letter-spacing: 5px;
+}
+#register .myform .errorInfor{
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    font-size: 14px;
+    color: red;
+    
+}

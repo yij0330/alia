@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购物车</title>
+    <!-- 重置样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 头部 -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- 登录页样式 -->
+    <link rel="stylesheet" href="./css/shopCar.css">
+    <!-- 页脚 -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- 引入jq库 -->
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <!-- 公共js -->
+    <script src="./js/common.js"></script>
+    <!-- 引入购物车js -->
+    <script src="./js/shopCar.js"></script>
+</head>
+<body>
+    <body>
+        <!-- 头部 -->
+        <div id="header" class="mb20">
+            <div class="top mw1200 cfff font14">
+                <div class="container clearfix">
+                    <span class="ml260">legouchina.cn</span>
+                    <div class="fr">
+                        欢迎光临乐购,
+                        请<a href="login.html">登录</a>|<a href="register.html">注册</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container relative">
+                <a href="home.html">
+                    <img src="./imgs/login-logo.jpg" class="logo absolute w258 h105">
+                </a>
+                <div class="font30 cfff absolute logotxt left125">结算中心</div>
+                <div class="clearfix search">
+                    <form action="#" method="get" class="fr searchbox mt6 mr0 clearfix">
+                        <input type="text" name="text" class="txt fl" placeholder="创意文具">
+                        <input type="submit" class="fr btn icon hand" value=""></input>
+                    </form>
+                    
+                    
+                </div>
+                <!-- 地址 -->
+                <div class="tright font14 c4d address">
+                    配送至
+                    <select>
+                        <option value="1">成都高新区三环内</option>
+                        <option value="2">成都高新区三环内</option>
+                        <option value="3">成都高新区三环内</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!-- 填写并核对订单信息 -->
+        <div id="order" class="font16 container relative">
+            <h3 class="c666 font20 normal">填写并核对订单信息</h3>
+            <ul class="title clearfix bgf2 tcenter font18 mb20">
+                <li>
+                    <label>
+                        <input type="checkbox" class="allSel">
+                        <span class="checkbox"></span>
+                        全选
+                    </label>
+                </li>
+                <li>
+                    商品
+                </li>
+                <li>单价</li>
+                <li>数量</li>
+                <li>小计</li>
+                <li>操作</li>
+            </ul>
+            <div class="main c4d mb30">
+                <script>
+                    for(let i=0; i<5; i++){
+                        document.write(`
+                        <ul class="clearfix tcenter bdbccc">
+                            <li class="tindent20 tleft">
+                                <label>
+                                    <input type="checkbox" class="sigSel">
+                                    <span class="checkbox"></span>
+                                </label>
+                            </li>
+                            <li class="clearfix pro">
+                                <div class="fl bdccc">
+                                    <img src="./imgs/details${i+1}.jpg">
+                                </div>
+                                <p class="fl ml20">从你的全世界路过</p>
+                            </li>
+                            <li class='price'>${44+i*100}.00</li>
+                            <li class='amount'>
+                                <div class="many clearfix bdccc mauto">
+                                    <div class="reduce fl bdrccc disabled">-</div>
+                                    <div class="result fl">1</div>
+                                    <div class="add fl bdlccc hand">+</div>
+                                </div>
+                            </li>
+                            <li class='sumPrice'>
+                                ${44+i*100}.00
+                            </li>
+                            <li class="tleft tindent20">
+                                <p class="hand remove">删除</p>
+                                <p>移到我的关注</p>
+                            </li>
+                        </ul>
+                        `);
+                    }
+                </script>
+            </div>
+            <div class="clearfix mb45 tfooter">
+                <ul class="summary c80 bdccc clearfix fl">
+                    <li class="tindent20 font18">
+                        <label>
+                            <input type="checkbox" class="allSel">
+                            <span class="checkbox"></span>
+                            全选
+                        </label>
+                    </li>
+                    <li class="removeChecked hand">删除选中商品</li>
+                    <li class="removeAll hand cff6600 bold">清空购物车</li>
+                    <li>
+                        已选择
+                        <div class="checkMany tcenter cff6600">0</div>
+                        件商品
+                    </li>
+                    <li class="c4d">
+                        总价
+                        <div class="sum tcenter normal">00.00</div>
+                    </li>
+                </ul>
+                <button class="account bgf60 font24 cfff fr tcenter inputNo hand">去结算</button>
+            </div>
+            <!-- 猜你喜欢 -->
+            <div class="like">
+                <h3 class="stitle">
+                    <span>猜你喜欢</span>
+                </h3>
+                <ul class="clearfix">
+                    <script>
+                        for(let i=0; i<5; i++){
+                            document.write(`
+                            <li class="items fl font14 red pt5">
+                                <div class="tcenter">
+                                    <img src="./imgs/zhekou03.jpg">
+                                </div>
+                                <div class="agio tcenter cfff font16">8折</div>
+                                <h3 class="c333 lh24 tindent10 normal">相对论</h3>
+                                <div class="lh24 tindent10 clearfix">
+                                    <span class="fl mr5">推荐:</span>
+                                    <div class="star fl">
+                                        <div class="starbox">
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="lh30 font24 tindent10">&yen;38 <span class="cc0 del ml20">&yen;38</span></p>
+                            </li>
+                            `);
+                        }
+                    </script>
+                </ul>
+            </div>
+            <a href="#">
+                <img src="./imgs/guanggao1.jpg">
+            </a>
+        </div>
+        <!-- 页脚 -->
+        <div id="footer" class="relative">
+            <div class="service mw1200">
+                <div class="container tcenter">
+                    <img src="./imgs/222_11.png">
+                    <img src="./imgs/222_13.png">
+                    <img src="./imgs/222_15.png">
+                    <img src="./imgs/222_17.png">
+                </div>
+            </div>
+            <div class="container tcenter">
+                <div class="clearfix help font14">
+                    <ul>
+                        <li>
+                            <h4>购物指南</h4>
+                        </li>
+                        <li>
+                            <a href="#">购物流程</a>
+                        </li>
+                        <li>
+                            <a href="#">发票制度</a>
+                        </li>
+                        <li>
+                            <a href="#">账户管理</a>
+                        </li>
+                        <li>
+                            <a href="#">会员优惠</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>支付方式</h4>
+                        </li>
+                        <li>
+                            <a href="#">货到付款</a>
+                        </li>
+                        <li>
+                            <a href="#">网上支付</a>
+                        </li>
+                        <li>
+                            <a href="#">礼品卡支付</a>
+                        </li>
+                        <li>
+                            <a href="#">银行转账</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>订单服务</h4>
+                        </li>
+                        <li>
+                            <a href="#">订单配送查询</a>
+                        </li>
+                        <li>
+                            <a href="#">订单状态查询</a>
+                        </li>
+                        <li>
+                            <a href="#">订单自动取消</a>
+                        </li>
+                        <li>
+                            <a href="#">自助修改订单</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>退货换</h4>
+                        </li>
+                        <li>
+                            <a href="#">政策</a>
+                        </li>
+                        <li>
+                            <a href="#">自助申请政策</a>
+                        </li>
+                        <li>
+                            <a href="#">退换货进度查询</a>
+                        </li>
+                        <li>
+                            <a href="#">退款方式和时间</a>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h4>商家服务</h4>
+                        </li>
+                        <li>
+                            <a href="#">商家中心</a>
+                        </li>
+                        <li>
+                            <a href="#">运营服务</a>
+                        </li>
+                        <li>
+                            <a href="#">加入唯品会</a>
+                        </li>
+                    </ul>
+                    <img src="./imgs/logo_00.png">
+                </div>
+                <p class="link">
+                    <a href="#">公司简介</a>|
+                    <a href="#">Investor Relations</a>|
+                    <a href="#">网站联盟</a>|
+                    <a href="#">乐购招商</a>|
+                    <a href="#">机构销售</a>|
+                    <a href="#">手机乐购</a>|
+                    <a href="#">官方Blog</a>|
+                    <a href="#">热词搜索</a>
+                </p>
+                <p class="copy">Copyright &copy; 乐购网 2004-2016, All Rights Reserved</p>
+            </div>
+        </div>
+    </body>
+</body>
+
+</html>

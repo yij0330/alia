@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>收银台</title>
+    <!-- 重置样式表 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <!-- 公共样式 -->
+    <link rel="stylesheet" href="./css/common.css">
+    <!-- 头部 -->
+    <link rel="stylesheet" href="./css/header.css">
+    <!-- 登录页样式 -->
+    <link rel="stylesheet" href="./css/menoy.css">
+    <!-- 页脚 -->
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- 引入jq库 -->
+    <script src="./js/jquery-1.11.0.min.js"></script>
+    <script src="./js/common.js"></script>
+    <!-- 引入购物车js -->
+    <script src="./js/menoy.js"></script>
+</head>
+<body>
+    <body>
+        <!-- 头部 -->
+        <div id="header" class="mb20">
+            <div class="top mw1200 cfff font14">
+                <div class="container clearfix">
+                    <span class="ml260">legouchina.cn</span>
+                    <div class="fr">
+                        欢迎光临乐购,
+                        请<a href="login.html">登录</a>|<a href="register.html">注册</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container relative">
+                <img src="./imgs/login-logo.jpg" class="logo absolute w258 h105">
+                <div class="font30 cfff absolute logotxt left125">收银台</div>
+            </div>
+        </div>
+        <div id="pay" class="container font16 c4d">
+            <div class="clearfix c666 lh30">
+                订单提交成功，请尽快付款！ 订单编号：<span>91000234567</span> 
+                <span class="load font28 ml40 cff6600"></span>
+                <a href="#" class="fr c468bfd">订单详情</a>
+            </div>
+            <div class="clearfix lh60 bgf2 font14 mb10">
+                请您在订单提交<span>24</span>小时内付款，否则将会取消订单
+                <span class="fr">应付金额：<span class="price cff6600">47.00</span></span>
+            </div>
+            <div class="clearfix mb10 lh34 ca6">
+                <div class="bgf60 cfff tcenter fl mr5 w150">乐购支付</div> 
+                以下方式由乐购支付提供
+            </div>
+            <div class="bgf2 clearfix mb10">
+                <div class="bankId fl lh34 bdccc tcenter choose">
+                    银行卡
+                </div>
+                <div class="bank bdccc fl lh34 ml20">
+                    <span>
+                        中国招商银行
+                    </span>
+                    <span class="cff6600">
+                        网银
+                    </span>
+                    <span class="c80 hand">最近使用</span>
+                </div>
+                <button class="btn fl lh30 inputNo ml20 hand">添加银行卡 +</button>
+                <div class="sumPrice fr">
+                    支付金额： <span class="cff6600">47.00</span>
+                </div>
+            </div>
+            <div class="clearfix mb20">
+                <button class="payBtn fr cfff bgf60 tcenter lh60 font24 inputNo hand">立即支付</button>
+            </div>
+            <div class="c80 font12 mb20">
+                <button class="otherPay hand bgf60 cfff font16 tcenter lh34 w150 inputNo">其他支付</button>
+                以下方式不支持合并支付
+            </div>
+            <ul class="payStyle clearfix bgf2 font14 mb46">
+                <li>微信支付</li>
+                <li>中国移动支付</li>
+                <li>中国银联</li>
+                <li>外籍内卡</li>
+                <li>拉卡拉</li>
+                <li>预约支付卡</li>
+                <li>乐购钱包扫一扫</li>
+            </ul>
+            <a href="#">
+                <img src="./imgs/guanggao1.jpg">
+            </a>
+        </div>
+        <!-- 页脚 -->
+    <div id="footer" class="relative">
+        <div class="service mw1200">
+            <div class="container tcenter">
+                <img src="./imgs/222_11.png">
+                <img src="./imgs/222_13.png">
+                <img src="./imgs/222_15.png">
+                <img src="./imgs/222_17.png">
+            </div>
+        </div>
+        <div class="container tcenter">
+            <div class="clearfix help font14">
+                <ul>
+                    <li>
+                        <h4>购物指南</h4>
+                    </li>
+                    <li>
+                        <a href="#">购物流程</a>
+                    </li>
+                    <li>
+                        <a href="#">发票制度</a>
+                    </li>
+                    <li>
+                        <a href="#">账户管理</a>
+                    </li>
+                    <li>
+                        <a href="#">会员优惠</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>支付方式</h4>
+                    </li>
+                    <li>
+                        <a href="#">货到付款</a>
+                    </li>
+                    <li>
+                        <a href="#">网上支付</a>
+                    </li>
+                    <li>
+                        <a href="#">礼品卡支付</a>
+                    </li>
+                    <li>
+                        <a href="#">银行转账</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>订单服务</h4>
+                    </li>
+                    <li>
+                        <a href="#">订单配送查询</a>
+                    </li>
+                    <li>
+                        <a href="#">订单状态查询</a>
+                    </li>
+                    <li>
+                        <a href="#">订单自动取消</a>
+                    </li>
+                    <li>
+                        <a href="#">自助修改订单</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>退货换</h4>
+                    </li>
+                    <li>
+                        <a href="#">政策</a>
+                    </li>
+                    <li>
+                        <a href="#">自助申请政策</a>
+                    </li>
+                    <li>
+                        <a href="#">退换货进度查询</a>
+                    </li>
+                    <li>
+                        <a href="#">退款方式和时间</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h4>商家服务</h4>
+                    </li>
+                    <li>
+                        <a href="#">商家中心</a>
+                    </li>
+                    <li>
+                        <a href="#">运营服务</a>
+                    </li>
+                    <li>
+                        <a href="#">加入唯品会</a>
+                    </li>
+                </ul>
+                <img src="./imgs/logo_00.png">
+            </div>
+            <p class="link">
+                <a href="#">公司简介</a>|
+                <a href="#">Investor Relations</a>|
+                <a href="#">网站联盟</a>|
+                <a href="#">乐购招商</a>|
+                <a href="#">机构销售</a>|
+                <a href="#">手机乐购</a>|
+                <a href="#">官方Blog</a>|
+                <a href="#">热词搜索</a>
+            </p>
+            <p class="copy">Copyright &copy; 乐购网 2004-2016, All Rights Reserved</p>
+        </div>
+    </div>
+
+
+
+    </body>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+/* 页脚 */
+#footer .service{
+    background: #f2f2f2;
+    padding: 25px 0 14px;
+    border-top: solid 3px #f60;
+    margin-bottom: 35px;
+}
+#footer .service img{
+    width: 135px;
+    height: 50px;
+}
+#footer .service img:not(:first-child){
+    margin-left: 90px;
+}
+#footer .rTop{
+    position: absolute;
+    top: -50px;
+    right: 30px;
+}
+
+#footer .help ul:first-child{
+    margin-left: 280px;
+}
+
+#footer .help ul{
+    float: left;
+}
+#footer  a{
+    color: #333;
+    text-decoration: none;
+}
+#footer .help li{
+    width: 110px;
+    line-height: 28px;
+    margin-right: 36px;
+}
+#footer .help li h4{
+    font-size: 18px;
+    font-weight: normal;
+}
+#footer .help img{
+    width: 120px;
+    height: 78px;
+    margin-top: 26px;
+}
+#footer  p{
+    line-height: 38px;
+}
+#footer  p a{
+    margin: 0 16px;
+}
+.link{
+    margin-top: 28px;
+}
+.copy{
+    margin-bottom: 100px;
+}
+
+/* 固定搜索框 */
+#fixedheader{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, .9);
+    border-bottom: solid 3px #f60;
+    display: none;
+    z-index: 9999;
+}
+#fixedheader img{
+    height: 50px;
+    margin-left: 50px;
+}
+#fixedheader form{
+    position: absolute;
+    margin-top: 0;
+    top: 7px;
+    left: 50%;
+    margin-left: -220px;
+}
+

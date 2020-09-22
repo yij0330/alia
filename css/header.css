@@ -1,0 +1,68 @@
+#header .top{
+    height: 28px;
+    line-height: 28px;
+    background: #000;
+}
+#header .top span{
+    margin-left: 210px;
+}
+#header .top a{
+    color: #ff6600;
+}
+#header  .logo{
+    width: 200px;
+    height: 112px;
+    top: -28px;
+}
+#header .search{
+    padding-top: 4px;
+    margin-bottom: 14px;
+}
+.searchbox{
+    width: 440px;
+    height: 36px;
+    border: 1px solid #ff6600;
+    margin-right: 36px;
+}
+.searchbox input{
+    border: none;
+    height: 36px;
+    outline: none;
+}
+.searchbox .txt{
+    width: 392px;
+    text-indent: 20px;
+}
+.searchbox .btn{
+    width: 48px;
+}
+#header .search a{
+    display: inline-block;
+    float: left;
+    width: 100px;
+    line-height: 38px;
+}
+#header .search .shopperCar{
+    background-color: #ff6600;
+    background-position: 0 -40px;
+    text-indent: 25px;
+}
+#header .search .order{
+    height: 36px;
+    background: #ebebeb;
+    border: 1px solid #ccc;
+}
+#header .nav{
+    margin-left: 218px;
+}
+#header .nav li{
+    line-height: 28px;
+    margin: 0 16px;
+    float: left;
+}
+#header .nav li a{
+    color: #000;
+}
+#header .nav li a:hover{
+    color: #ff6600;
+}
